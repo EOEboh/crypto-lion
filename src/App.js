@@ -1,9 +1,19 @@
 import React from "react";
-import { Routes, Route, Link} from 'react-router-dom';
+import { Routes, Route, Link, useParams } from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
 import './App.css';
 
-import { Navbar, Homepage, Exchanges, Cryptocurrencies, CryptoDetails, News } from './components';
+import { Navbar, Homepage, Exchanges, Cryptocurrencies, News } from './components';
+
+
+
+const CryptoDetails = () => {
+
+  let { coinId } = useParams();
+    return (<div>
+      <h1>CRYPTO DETAILS</h1>
+    </div>);
+  };
 
 const App = () => {
   return (
@@ -18,8 +28,13 @@ const App = () => {
                     <Routes>  
                         <Route path='/' element={<Homepage />} />
                         <Route path='/exchanges' element={<Exchanges />} />
+
                         <Route path='/cryptocurrencies' element={<Cryptocurrencies />} />
+
+                        <Route path='crypto'>  
                         <Route path=':coinId' element={<CryptoDetails />} />
+                        </Route>
+
                         <Route path='/news' element={<News />} />
                     </Routes>
                 </div>
