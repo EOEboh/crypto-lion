@@ -27,10 +27,10 @@ const Homepage = () => {
     </Title>
     <Row>
       <Col span={12}><Statistic title='Total Cryptocurrencies' value={CryptoStats.total}/> </Col>
-      <Col span={12}><Statistic title='Total Excahnges' value={CryptoStats.totalExchanges}/></Col>
-      <Col span={12}><Statistic title='Total Market Cap' value={CryptoStats.totalMarketCap}/></Col>
-      <Col span={12}><Statistic title='Total 24hr Volume' value={CryptoStats.total24hVolume}/></Col>
-      <Col span={12}><Statistic title='Total Markets' value={CryptoStats.totalMarkets}/></Col>
+      <Col span={12}><Statistic title='Total Excahnges' value={millify(CryptoStats.totalExchanges)}/></Col>
+      <Col span={12}><Statistic title='Total Market Cap' value={millify(CryptoStats.totalMarketCap)}/></Col>
+      <Col span={12}><Statistic title='Total 24hr Volume' value={millify(CryptoStats.total24hVolume)}/></Col>
+      <Col span={12}><Statistic title='Total Markets' value={millify(CryptoStats.totalMarkets)}/></Col>
     </Row>
     <div className='home-heading-container'>
       <Title level={2} className='home-title'>Top 10 Cryptocurrencies</Title>
@@ -43,7 +43,7 @@ const Homepage = () => {
       <Title level={3} className='show-more'><Link to='/news'>Show More</Link></Title>
 
     </div>
-    <News/>
+    <News simplified={true}/>
   </>
   );
 };
