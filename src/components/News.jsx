@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Select, Typography, Row, Col, Avatar,Card } from 'antd';
 import moment from 'moment';
+import Loader from './Loader';
 
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 
@@ -22,7 +23,7 @@ const News = ({simplified}) => {
   // data about the cryptocurrencies from cryptoApi
   const { data } = useGetCryptosQuery(100);
 
-  if(!cryptoNews?.value) return 'Loading latest crypto news ...';
+  if(!cryptoNews?.value) return <Loader />
   
   
 

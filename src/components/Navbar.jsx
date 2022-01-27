@@ -23,8 +23,8 @@ const Navbar = () => {
                     </Button> */}
 
                 </div>
-                <Menu theme='dark'>
-                    <Menu.Item icon={<HomeOutlined />}>
+                <Menu style={{ backgroundColor: '#A13333'}}>
+                    <Menu.Item icon={<HomeOutlined /> }>
                         <Link to='/'>Home</Link>
                     </Menu.Item>
                     <Menu.Item icon={<FundOutlined />}>

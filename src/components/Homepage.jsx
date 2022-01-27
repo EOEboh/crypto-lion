@@ -2,6 +2,7 @@ import React from 'react';
 import millify  from 'millify';
 import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
+import Loader from './Loader';
 
 import { Cryptocurrencies, News } from '../components';
 
@@ -18,7 +19,7 @@ const Homepage = () => {
   const CryptoStats = data?.data?.stats;
 
   // if the data is still fetching
-  if(isFetching) return '..Fetching Data';
+  if(isFetching) return <Loader />
 
   return (
   <>
