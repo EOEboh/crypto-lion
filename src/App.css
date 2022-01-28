@@ -13,8 +13,11 @@
     box-sizing: border-box;
 }
 
-a:hover{
-    color: var(--pink) !important;
+
+a{
+    color: #ffffff !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
 }
 
 .app{
@@ -29,6 +32,7 @@ a:hover{
 .nav-menu{
     background-color: #A13333;
 }
+
 .main{
     flex: 0.8;
     width: 100%;

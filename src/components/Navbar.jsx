@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Menu, Typography, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
@@ -8,6 +8,29 @@ import icon from '../images/logo.png';
 import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
 
 const Navbar = () => {
+
+    const [activeMenu, setActiveMenu] = useState(true);
+    const [screenSize, setScreenSize] = useState(null);
+
+    useEffect(()=> {
+        const handleScreensize = () => setScreenSize(window.innerWidth);
+
+        window.addEventListener('resize', handleScreensize);
+        handleScreensize();
+
+        return () => window.removeEventListener('resize', handleScreensize)
+    }, []);
+
+    useEffect(()=> {
+        if(screenSize < 790){
+            setActiveMenu(false)
+        } else{
+            setActiveMenu(true)
+        }
+    }, [screenSize])
+
+
+
   return (
             <div className='nav-container'>
                 <div className='logo-container'>
@@ -18,12 +41,13 @@ const Navbar = () => {
 
                     
                     {/* for mobile devices */}
-                    {/* <Button className='menu-control-container'>
-
-                    </Button> */}
+                    <Button className='menu-control-container' onClick={() => setActiveMenu(!activeMenu)} >
+                        <MenuOutlined />
+                    </Button>
 
                 </div>
-                <Menu style={{ backgroundColor: '#A13333'}}>
+
+                { activeMenu && ( <Menu style={{ backgroundColor: '#461111'}}>
                     <Menu.Item icon={<HomeOutlined /> }>
                         <Link to='/'>Home</Link>
                     </Menu.Item>
@@ -36,7 +60,8 @@ const Navbar = () => {
                     <Menu.Item icon={<BulbOutlined />}>
                         <Link to='/news'>News</Link>
                     </Menu.Item>
-                </Menu>
+                </Menu>)}
+                
                 
             </div>    
   );

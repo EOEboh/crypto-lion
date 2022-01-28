@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route, Link, useParams } from 'react-router-dom';
 
+
 import './App.css';
 import HTMLReactParser from 'html-react-parser';
 import Loader from './components/Loader';
@@ -137,14 +138,17 @@ const App = () => {
                 </div>
             </Layout>
           <div className='footer' level={5} style={{ color:'white', textAlign: 'center'}}>
-              <Typography.Title>
+              <Typography.Title level={2}>
                 Crypto Lion <br/>
-                All rights reserved &copy;
+                All rights reserved &copy; <br/>
+                Emmanuel Eboh
                 </Typography.Title>
-                <Space>
+                 
+                
                   <Link to='/'>
                     Home
                   </Link>
+                  
                   <Link to='/cryptocurrencies'>
                     Cryptocurrencies
                   </Link>
@@ -154,7 +158,8 @@ const App = () => {
                   <Link to='/news'>
                     News
                   </Link>
-                </Space>
+                
+                
           </div>
           </div>
       </div>
