@@ -11,7 +11,7 @@ import millify from 'millify';
 import { Layout, Space, Col, Row, Typography, Select } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from "@ant-design/icons";
 
-import { Navbar, Homepage, Exchanges, Cryptocurrencies, News } from './components';
+import { Navbar, Homepage, Cryptocurrencies, News } from './components';
 import { useStore } from "react-redux";
 
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from "./services/cryptoApi";
@@ -125,8 +125,7 @@ const App = () => {
                 <div className='routes'>
                     <Routes>  
                         <Route path='/' element={<Homepage />} />
-                        <Route path='/exchanges' element={<Exchanges />} />
-
+                  
                         <Route path='/cryptocurrencies' element={<Cryptocurrencies />} />
 
                         <Route path='crypto'>  
@@ -137,28 +136,26 @@ const App = () => {
                     </Routes>
                 </div>
             </Layout>
-          <div className='footer' level={5} style={{ color:'white', textAlign: 'center'}}>
-              <Typography.Title level={2}>
-                Crypto Lion <br/>
-                All rights reserved &copy; <br/>
-                Emmanuel Eboh
-                </Typography.Title>
+          <div className='footer' level={2} style={{ color:'white', textAlign: 'center'}}>
                  
                 
                   <Link to='/'>
                     Home
                   </Link>
-                  
+            
                   <Link to='/cryptocurrencies'>
                     Cryptocurrencies
                   </Link>
-                  <Link to='/exchanges'>
-                    Exchanges
-                  </Link>
+                
                   <Link to='/news'>
                     News
                   </Link>
-                
+              <Typography.Title level={2}>
+                Crypto Lion <br/>
+                All rights reserved <br/>
+                Emmanuel Eboh <br/>
+                &copy;  {new Date().getFullYear()}
+                </Typography.Title>
                 
           </div>
           </div>

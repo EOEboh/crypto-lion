@@ -15,11 +15,13 @@
 
 
 a{
-    color: #ffffff !important;
+    color: #a9a9a9 !important;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
-
+a:hover{
+    color: #2121d3 !important;
+}
 .app{
     display: flex;
     overflow: hidden;
@@ -79,6 +81,26 @@ a{
     justify-content: center;
     align-items: center;
 }
+.logo a{
+    color: #000000 !important;   
+}
+.logo a:hover{
+    font-size: 60%;
+}
+.heading{
+    background-color: #8E806A;
+    border-radius: 6px;
+    text-align: center;
+    padding: 4px;
+
+}
+.home-title{
+    background-color: #8E806A;
+    border-radius: 6px;
+    margin-right: 1rem;
+    padding: 6px;
+
+}
 
 @media screen and (max-width:1300px){
     .main{
@@ -133,9 +155,11 @@ a{
     }
     .home-title{
         font-size: 1.4rem !important;
+        
     }
     .show-more{
         font-size: 1.3rem !important;
+        
     }
 }
 
@@ -381,4 +405,5 @@ width: 70%;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    font-size: ;
 }
