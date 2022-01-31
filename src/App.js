@@ -150,12 +150,12 @@ const App = () => {
                   <Link to='/news'>
                     News
                   </Link>
-              <Typography.Title level={2}>
+              <p>                
                 Crypto Lion <br/>
                 All rights reserved <br/>
                 Emmanuel Eboh <br/>
                 &copy;  {new Date().getFullYear()}
-                </Typography.Title>
+              </p>
                 
           </div>
           </div>
