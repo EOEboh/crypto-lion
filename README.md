@@ -1,6 +1,6 @@
 # Crypto Lion
 
-React.js, JavaScript and Redux Toolkit (utilized for querying data).
+React.js, JavaScript, Redux Toolkit for querying API data, Ant Design for styled user interfaces.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -10,7 +10,7 @@ This is a cryptocurrency app built with React, giving real-time cryptocurrency u
 ## Installation 
 Fork and clone this repo
 
-Install necessary dependencies as indicated in the `package.json` file
+You may need to install necessary dependencies as indicated in the `package.json` file
 
 Run `npm start` on your terminal, navigate to http://localhost:3000 and the project should run live on your local environment
 
