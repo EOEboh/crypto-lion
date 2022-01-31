@@ -64,7 +64,7 @@ const CryptoDetails = () => {
       <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
-            <Title level={3} className="coin-details-heading">{cryptoDetails.name} Value Statistics</Title>
+            <Title level={3} className="coin-details-heading">{cryptoDetails.name} Value and Statistics</Title>
             <p>An overview showing the statistics of {cryptoDetails.name}, such as the base and quote currency, the rank, and trading volume.</p>
           </Col>
           {stats.map(({ icon, title, value }) => (
@@ -79,7 +79,7 @@ const CryptoDetails = () => {
         </Col>
         <Col className="other-stats-info">
           <Col className="coin-value-statistics-heading">
-            <Title level={3} className="coin-details-heading">Other Stats Info</Title>
+            <Title level={3} className="coin-details-heading">Other Information</Title>
             <p>An overview showing the statistics of {cryptoDetails.name}, such as the base and quote currency, the rank, and trading volume.</p>
           </Col>
           {genericStats.map(({ icon, title, value }) => (
