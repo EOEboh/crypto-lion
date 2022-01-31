@@ -12,7 +12,9 @@
 /build
 
 
-# misc
+# api params
+.env
+
 .DS_Store
 .env.local
 .env.development.local
