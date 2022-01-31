@@ -8,7 +8,7 @@ This is a cryptocurrency app built with React, giving real-time cryptocurrency u
 ## Installation 
 Fork and clone this repo
 
-Install necessary dependies as indicated in the `package.json` file
+Install necessary dependencies as indicated in the `package.json` file
 
 Run `npm start` on your terminal, navigate to http://localhost:3000 and the project should run live on your local environment
 
