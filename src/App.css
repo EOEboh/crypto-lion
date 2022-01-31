@@ -1,10 +1,10 @@
 :root{
-    --text-primary:#000000;
+    --text-primary:#EBD494;
     --bgPrimary:#8E806A;
-   --bgSecondary: #F9F9F9;
-   --pink: #461111;
+   --bgSecondary: #EBD494;
+   --pink: #472836;
    --light-blue: #e6f7ff;
-   --border: #d9d9d9;
+   --border: #472836;
 }
 
 * {
@@ -13,14 +13,20 @@
     box-sizing: border-box;
 }
 
+/* Google fonts */
+@font-face {
+    font-family: 'Supermercado One' cursive;
+    src: local('Supermercado') url('./fonts/SupermercadoOne-Regular.ttf') format('truetype');
+}
 
 a{
-    color: #a9a9a9 !important;
+    color: #EBD494 !important;
     font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
+    font-family: 'Supermercado', cursive;
 }
 a:hover{
-    color: #2121d3 !important;
+    color: #FEFFBE !important;
 }
 .app{
     display: flex;
@@ -29,10 +35,10 @@ a:hover{
 
 .navbar{
     flex: 0.2;
-    background-color: #ffffff;
+    background-color: #472836;
 }
 .nav-menu{
-    background-color: #A13333;
+    background-color: #472836;
 }
 
 .main{
@@ -49,11 +55,11 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: #461111;
+    background-color: #472836;
 }
 
 .logo-container{
-    background-color: #8E806A;
+    background-color: #472836;
     display: flex;
     padding: 20px;
     align-items: center;
@@ -61,9 +67,11 @@ a:hover{
 }
 .logo{
     margin:0 0 0 15px;
+    
 }
 .logo a{
    color: white;
+   font-family: 'Supermercado', cursive;
 }
 .menu-control-container{
     display: none !important;
@@ -82,23 +90,27 @@ a:hover{
     align-items: center;
 }
 .logo a{
-    color: #000000 !important;   
+    color: #EBD494 !important;   
 }
 .logo a:hover{
     font-size: 60%;
 }
 .heading{
-    background-color: #8E806A;
+    color: #ffffff !important;
+    background-color: #472836;
     border-radius: 6px;
     text-align: center;
     padding: 4px;
+    font-family: Supermercado, cursive;
 
 }
 .home-title{
-    background-color: #8E806A;
+    color: #ffffff !important;
+    background-color: #472836;
     border-radius: 6px;
     margin-right: 1rem;
     padding: 6px;
+    font-family: SupermercadoOne-Regular, cursive;
 
 }
 
@@ -142,7 +154,7 @@ a:hover{
         position:fixed;
         width: 100%;
         z-index: 100;
-        background-color: var(--bgSecondary);
+        background-color: var(--pink);
     }
   
     .menu-control-container{
@@ -378,6 +390,10 @@ width: 70%;
 .show-more{
     margin-top: 0px !important;
 }
+.show-more a{
+    color: #472836 !important;
+}
+
 .exchange-image{
     margin: 0px 10px !important;
 }
@@ -400,10 +416,10 @@ width: 70%;
 }
 
 .footer {
-    background-color: #461111;
+    background-color: #472836;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    font-size: ;
+    
 }
