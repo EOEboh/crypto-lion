@@ -1,4 +1,6 @@
-# Getting Started with Create React App and Redux Toolkit was utilized for querying data
+# Crypto Lion
+
+React.js, JavaScript and Redux Toolkit (utilized for querying data).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
