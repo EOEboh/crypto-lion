@@ -29,7 +29,7 @@ News data from **Bing News Search** API
 Pull Requests are welcomed. Please open an issue first to state what you would love to add or change.
 
 ## LIVE
-You can view the live version [HERE](https://crypto-lion.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b97d6648-0573-4872-87f8-0c8d8d8d8e07/deploy-status)](https://app.netlify.com/sites/crypto-lion/deploys)
 
 
 
